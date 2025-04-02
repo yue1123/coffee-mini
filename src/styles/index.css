@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+#app {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+  overflow: hidden;
+  background: #202020;
+}
