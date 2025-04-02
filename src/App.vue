@@ -31,7 +31,7 @@
 				// }
 				setTimeout(() => {
 					currentImage.value = bgs[api.selectedScrollSnap()]
-				}, 300)
+				}, 800)
 			})
 			// console.log(emblaApi.value.slideNodes()) // Access API
 		}

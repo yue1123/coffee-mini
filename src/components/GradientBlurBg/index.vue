@@ -34,7 +34,7 @@
     @place-cell: center;
     width: @rand(40%, 80%);
     height: @rand(40%, 80%);
-    transition: .3s background, opacity;
+    transition: .3s background,opacity;
     transform: translate(@rand(-200%, 200%), @rand(-60%, 60%)) scale(@rand(.8, 1.8)) skew(@rand(45deg));
     clip-path: polygon(
       @r(0, 30%) @r(0, 50%), 
@@ -45,7 +45,7 @@
       @r(0, 30%) @r(60%, 100%)
     );
     background: @pick(${rgbColors.value.join(',')});
-    opacity: @rand(.3, .8);
     `
 	})
+  // opacity: @rand(.3, .8);
 </script>
