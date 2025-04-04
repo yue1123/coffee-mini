@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/vite-env.d.ts","./src/hooks/useimagecolors.ts","./src/workers/getimagecolors.ts","./src/app.vue","./src/useritem.vue","./src/userlist.vue","./src/components/card/index.vue","./src/components/gradientblurbg/index.vue"],"version":"5.7.3"}

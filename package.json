@@ -9,22 +9,29 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"@iconify/vue": "^4.3.0",
 		"@vueuse/core": "^13.0.0",
 		"colorthief": "^2.6.0",
 		"css-doodle": "^0.42.2",
 		"embla-carousel-vue": "^8.5.2",
 		"motion-v": "1.0.0-beta.0",
+		"quantize": "^1.0.2",
+		"vaul-vue": "^0.4.1",
 		"vue": "^3.5.13"
 	},
 	"devDependencies": {
 		"@tailwindcss/vite": "^4.1.1",
 		"@types/node": "^22.13.17",
+		"@types/quantize": "^1.0.2",
+		"@vitejs/plugin-basic-ssl": "^2.0.0",
 		"@vitejs/plugin-vue": "^5.2.1",
 		"@vue/tsconfig": "^0.7.0",
 		"sass": "^1.86.1",
 		"tailwindcss": "^4.1.1",
+		"tailwindcss-safe-area": "^0.6.0",
 		"typescript": "~5.7.2",
 		"vite": "^6.2.0",
+		"vite-plugin-pwa": "^1.0.0",
 		"vue-tsc": "^2.2.4"
 	}
 }
