@@ -33,5 +33,5 @@
 <script setup lang="ts">
 	import { Icon } from '@iconify/vue'
 	import { DrawerContent, DrawerOverlay, DrawerHandle, DrawerPortal, DrawerRoot, DrawerTrigger } from 'vaul-vue'
-	import UserItem from './UserItem.vue'
+	import UserItem from '@/components/UserItem/index.vue'
 </script>

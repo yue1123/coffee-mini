@@ -1,5 +1,5 @@
 <template>
-	<div class="apple-card relative overflow-hidden rounded-3xl">
+	<div class="apple-card relative overflow-hidden">
 		<div class="card-content w-full h-full relative z-10">
 			<slot></slot>
 		</div>
@@ -11,12 +11,19 @@
 
 	interface Props {
 		background: string
+		blurAmount?: number
 	}
 
-	const props = defineProps<Props>()
+	const props = withDefaults(defineProps<Props>(), {
+		blurAmount: 25
+	})
 	const background = computed(() => {
 		return `url(${props.background})`
 	})
+	const blur = computed(() => {
+		return `blur(${props.blurAmount}px)`
+	})
+  console.log(props.blurAmount);
 </script>
 
 <style lang="scss">
@@ -29,7 +36,7 @@
 			bottom: 0;
 			left: 0;
 			content: '';
-			filter: blur(25px);
+			filter: v-bind(blur);
 			transform: scale(1.3) translate3d(0, 0, 0);
 		}
 		&::after {

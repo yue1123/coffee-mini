@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'node:path'
 import { VitePWA } from 'vite-plugin-pwa'
+import Pages from 'vite-plugin-pages'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -15,6 +16,9 @@ export default defineConfig({
 	plugins: [
 		vue(),
 		tailwindcss(),
+		Pages({
+			dirs: 'src/views'
+		}),
 		VitePWA({
 			// devOptions: { enabled: true },
 			registerType: 'autoUpdate',

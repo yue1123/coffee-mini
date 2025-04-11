@@ -1,5 +1,5 @@
 /// <reference types="vite/client" />
-
+/// <reference types="vite-plugin-pages/client" />
 declare module 'colorthief' {
 	export type RGBColor = [number, number, number]
 	export default class ColorThief {
